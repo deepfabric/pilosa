@@ -38,9 +38,9 @@ import (
 	"math"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/pql"
-	"github.com/pilosa/pilosa/roaring"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/pql"
+	"github.com/deepfabric/pilosa/roaring"
 )
 
 const (

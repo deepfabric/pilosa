@@ -20,7 +20,7 @@ import (
 	"io"
 
 	toml "github.com/pelletier/go-toml"
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // ConfigCommand represents a command for printing a default config.

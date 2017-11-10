@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // ImportCommand represents a command for bulk importing data.

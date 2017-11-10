@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
+	"github.com/deepfabric/pilosa/internal"
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/internal"
 )
 
 // AttrBlockSize is the size of attribute blocks for anti-entropy.

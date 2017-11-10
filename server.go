@@ -33,8 +33,8 @@ import (
 
 	"github.com/CAFxX/gcnotifier"
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/diagnostics"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/diagnostics"
+	"github.com/deepfabric/pilosa/internal"
 	"golang.org/x/net/context"
 )
 

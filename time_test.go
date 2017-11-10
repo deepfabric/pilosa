@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // Ensure string can be parsed into time quantum.

@@ -21,8 +21,8 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/test"
 )
 
 // Ensure the cluster can fairly distribute partitions across the nodes.

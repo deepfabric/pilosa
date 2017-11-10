@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa/pql"
 )
 
 // Ensure call can be converted into a string.

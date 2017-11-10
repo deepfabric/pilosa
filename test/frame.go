@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // Frame represents a test wrapper for pilosa.Frame.

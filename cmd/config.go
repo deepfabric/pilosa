@@ -21,8 +21,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/pilosa/pilosa/ctl"
-	"github.com/pilosa/pilosa/server"
+	"github.com/deepfabric/pilosa/ctl"
+	"github.com/deepfabric/pilosa/server"
 )
 
 var Conf *ctl.ConfigCommand

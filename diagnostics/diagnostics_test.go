@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pilosa/pilosa/diagnostics"
+	"github.com/deepfabric/pilosa/diagnostics"
 )
 
 func TestDiagnosticsClient(t *testing.T) {

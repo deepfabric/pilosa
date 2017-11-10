@@ -3,8 +3,8 @@ package test
 import (
 	"strings"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/pql"
 )
 
 // Executor represents a test wrapper for pilosa.Executor.

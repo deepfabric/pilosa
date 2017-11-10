@@ -35,7 +35,7 @@ import (
 	"crypto/tls"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // ClientOptions represents the configuration for a InternalHTTPClient

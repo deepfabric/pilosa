@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa/pql"
 )
 
 func TestScanner_Scan(t *testing.T) {

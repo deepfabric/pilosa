@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // AttrStore represents a test wrapper for pilosa.AttrStore.

@@ -36,10 +36,10 @@ import (
 	"time"
 
 	"github.com/BurntSushi/toml"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/gossip"
-	"github.com/pilosa/pilosa/server"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/gossip"
+	"github.com/deepfabric/pilosa/server"
+	"github.com/deepfabric/pilosa/test"
 )
 
 // Ensure program can process queries and maintain consistency.

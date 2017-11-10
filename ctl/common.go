@@ -2,7 +2,7 @@ package ctl
 
 import (
 	"crypto/tls"
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 	"github.com/spf13/pflag"
 )
 

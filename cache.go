@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/golang/groupcache/lru"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 const (

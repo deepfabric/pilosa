@@ -20,7 +20,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // System errors.

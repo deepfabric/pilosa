@@ -22,8 +22,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // BenchCommand represents a command for benchmarking index operations.

@@ -39,13 +39,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/gorilla/mux"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/pql"
 
 	"unicode"
 
 	// Allow building Pilosa without the web UI.
-	_ "github.com/pilosa/pilosa/statik"
+	_ "github.com/deepfabric/pilosa/statik"
 	"github.com/rakyll/statik/fs"
 )
 

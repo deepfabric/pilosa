@@ -20,9 +20,9 @@ import (
 
 	"strings"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/test"
 )
 
 func TestInputDefinition_Open(t *testing.T) {

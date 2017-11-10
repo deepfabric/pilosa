@@ -20,7 +20,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // ExportCommand represents a command for bulk exporting data from a server.

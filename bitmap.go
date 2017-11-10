@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"sort"
 
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/roaring"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/roaring"
 )
 
 // Bitmap represents a set of bits.

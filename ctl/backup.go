@@ -20,7 +20,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // BackupCommand represents a command for backing up a view.

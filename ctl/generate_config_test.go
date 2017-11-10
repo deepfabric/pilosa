@@ -17,7 +17,7 @@ package ctl
 import (
 	"bytes"
 	"context"
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 	"io"
 	"os"
 	"strings"

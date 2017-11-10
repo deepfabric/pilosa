@@ -26,8 +26,8 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/pql"
 )
 
 // Default frame settings.

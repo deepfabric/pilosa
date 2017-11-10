@@ -22,9 +22,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/pql"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/pql"
+	"github.com/deepfabric/pilosa/test"
 )
 
 func TestHolder_Open(t *testing.T) {

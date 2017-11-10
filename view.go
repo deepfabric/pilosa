@@ -24,8 +24,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/pql"
 )
 
 // View layout modes.

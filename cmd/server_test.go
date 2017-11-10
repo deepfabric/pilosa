@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/cmd"
-	_ "github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/cmd"
+	_ "github.com/deepfabric/pilosa/test"
 )
 
 func TestServerHelp(t *testing.T) {

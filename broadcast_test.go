@@ -19,8 +19,8 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // Ensure a message can be marshaled and unmarshaled.

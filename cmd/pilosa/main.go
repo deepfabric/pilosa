@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pilosa/pilosa/cmd"
+	"github.com/deepfabric/pilosa/cmd"
 )
 
 func main() {

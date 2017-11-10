@@ -19,7 +19,7 @@ import (
 	"reflect"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // NodeSet represents an interface for Node membership and inter-node communication.

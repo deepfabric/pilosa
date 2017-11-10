@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/roaring"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/roaring"
 )
 
 // CheckCommand represents a command for performing consistency checks on data files.

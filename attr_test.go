@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa/test"
 )
 
 // Ensure database can set and retrieve column attributes.

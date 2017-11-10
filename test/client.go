@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // Client represents a test wrapper for pilosa.Client.

@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/test"
 )
 
 // TestMultiStatClient_Expvar run the multistat client with exp var

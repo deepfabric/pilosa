@@ -17,7 +17,7 @@ package ctl
 import (
 	"time"
 
-	"github.com/pilosa/pilosa/server"
+	"github.com/deepfabric/pilosa/server"
 	"github.com/spf13/cobra"
 )
 

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 func Test_NewConfig(t *testing.T) {

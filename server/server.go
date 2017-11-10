@@ -31,9 +31,9 @@ import (
 
 	"crypto/tls"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/gossip"
-	"github.com/pilosa/pilosa/statsd"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/gossip"
+	"github.com/deepfabric/pilosa/statsd"
 	"io/ioutil"
 )
 

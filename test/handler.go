@@ -11,9 +11,9 @@ import (
 	"net/url"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/pql"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/pql"
 )
 
 // Handler represents a test wrapper for pilosa.Handler.

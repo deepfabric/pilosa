@@ -21,7 +21,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/pilosa/pilosa/ctl"
+	"github.com/deepfabric/pilosa/ctl"
 )
 
 var Exporter *ctl.ExportCommand

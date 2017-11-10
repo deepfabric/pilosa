@@ -18,8 +18,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/pilosa/pilosa/pql"
-	_ "github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa/pql"
+	_ "github.com/deepfabric/pilosa/test"
 )
 
 // Ensure the parser can parse PQL.

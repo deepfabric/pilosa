@@ -19,7 +19,7 @@ import (
 	"hash/fnv"
 	"time"
 
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 const (

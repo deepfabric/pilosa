@@ -17,7 +17,7 @@ package pilosa
 import (
 	"fmt"
 
-	"github.com/pilosa/pilosa/roaring"
+	"github.com/deepfabric/pilosa/roaring"
 )
 
 // Iterator is an interface for looping over row/column pairs.

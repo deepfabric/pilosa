@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pilosa/pilosa"
-	_ "github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	_ "github.com/deepfabric/pilosa/test"
 )
 
 func TestValidateName(t *testing.T) {

@@ -22,9 +22,9 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/pql"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/pql"
+	"github.com/deepfabric/pilosa/test"
 )
 
 // Ensure a bitmap query can be executed.

@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/test"
 )
 
 func TestExportCommand_Validation(t *testing.T) {

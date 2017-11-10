@@ -20,7 +20,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // GenerateConfigCommand represents a command for printing a default config.

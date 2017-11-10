@@ -28,10 +28,10 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/pql"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/pql"
+	"github.com/deepfabric/pilosa/test"
 )
 
 func TestHandlerPanics(t *testing.T) {

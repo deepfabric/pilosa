@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pilosa/pilosa/statsd"
-	_ "github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa/statsd"
+	_ "github.com/deepfabric/pilosa/test"
 )
 
 func TestStatsClient_WithTags(t *testing.T) {

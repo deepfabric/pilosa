@@ -22,7 +22,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 func TestBenchCommand_InvalidOption(t *testing.T) {

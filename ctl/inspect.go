@@ -24,8 +24,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/roaring"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/roaring"
 )
 
 // InspectCommand represents a command for inspecting fragment data files.

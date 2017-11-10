@@ -26,9 +26,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/ctl"
-	"github.com/pilosa/pilosa/server"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/ctl"
+	"github.com/deepfabric/pilosa/server"
 )
 
 // Server is global so that tests can control and verify it.

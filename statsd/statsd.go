@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/DataDog/datadog-go/statsd"
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // StatsD protocal wrapper using the DataDog library that added Tags to the StatsD protocal

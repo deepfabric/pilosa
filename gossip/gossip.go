@@ -24,8 +24,8 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/hashicorp/memberlist"
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // GossipNodeSet represents a gossip implementation of NodeSet using memberlist

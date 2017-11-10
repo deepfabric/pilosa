@@ -17,8 +17,8 @@ package ctl
 import (
 	"bytes"
 	"testing"
+	"github.com/deepfabric/pilosa/server"
 
-	"github.com/pilosa/pilosa/server"
 	"github.com/spf13/cobra"
 )
 

@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/pilosa/pilosa/internal"
+	"github.com/deepfabric/pilosa/internal"
 )
 
 // Action types.

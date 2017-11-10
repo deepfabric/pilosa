@@ -20,7 +20,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // RestoreCommand represents a command for restoring a frame from a backup.

@@ -19,7 +19,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/pilosa/pilosa/ctl"
+	"github.com/deepfabric/pilosa/ctl"
 	"github.com/spf13/cobra"
 )
 

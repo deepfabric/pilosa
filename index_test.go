@@ -20,9 +20,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pilosa/pilosa"
-	"github.com/pilosa/pilosa/internal"
-	"github.com/pilosa/pilosa/test"
+	"github.com/deepfabric/pilosa"
+	"github.com/deepfabric/pilosa/internal"
+	"github.com/deepfabric/pilosa/test"
 )
 
 // Ensure index can open and retrieve a frame.

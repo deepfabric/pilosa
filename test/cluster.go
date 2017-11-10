@@ -3,7 +3,7 @@ package test
 import (
 	"fmt"
 
-	"github.com/pilosa/pilosa"
+	"github.com/deepfabric/pilosa"
 )
 
 // NewCluster returns a cluster with n nodes and uses a mod-based hasher.
