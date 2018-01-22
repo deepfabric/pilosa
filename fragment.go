@@ -238,7 +238,7 @@ func (f *Fragment) openStorage() error {
 	}
 
 	// Attach the file to the bitmap to act as a write-ahead log.
-	f.storage.OpWriter = f.file
+	f.storage.OpWriter = nil
 	f.rowCache = &SimpleCache{make(map[uint64]*Bitmap)}
 
 	return nil
@@ -300,14 +300,22 @@ func (f *Fragment) close() error {
 		return err
 	}
 
-	// Close underlying storage.
-	if err := f.closeStorage(); err != nil {
-		f.logger().Printf("fragment: error closing storage: err=%s, path=%s", err, f.path)
-		return err
-	}
-
 	// Remove checksums.
 	f.checksums = nil
+
+	if f.storage.OpWriter == nil {
+		// Need to snapshot if WAL is disabled.
+		if err := f.snapshot(false); err != nil {
+			f.logger().Printf("fragment: error closing storage: err=%s, path=%s", err, f.path)
+			return err
+		}
+	} else {
+		// Close underlying storage.
+		if err := f.closeStorage(); err != nil {
+			f.logger().Printf("fragment: error closing storage: err=%s, path=%s", err, f.path)
+			return err
+		}
+	}
 
 	return nil
 }
@@ -1323,7 +1331,7 @@ func (f *Fragment) Import(rowIDs, columnIDs []uint64) error {
 	}
 
 	// Write the storage to disk and reload.
-	if err := f.snapshot(); err != nil {
+	if err := f.snapshot(true); err != nil {
 		return err
 	}
 
@@ -1357,7 +1365,7 @@ func (f *Fragment) ImportValue(columnIDs, values []uint64, bitDepth uint) error 
 		_ = f.openStorage()
 		return err
 	}
-	if err := f.snapshot(); err != nil {
+	if err := f.snapshot(true); err != nil {
 		return err
 	}
 	return nil
@@ -1371,7 +1379,7 @@ func (f *Fragment) incrementOpN() error {
 		return nil
 	}
 
-	if err := f.snapshot(); err != nil {
+	if err := f.snapshot(true); err != nil {
 		return fmt.Errorf("snapshot: %s", err)
 	}
 	return nil
@@ -1381,7 +1389,7 @@ func (f *Fragment) incrementOpN() error {
 func (f *Fragment) Snapshot() error {
 	f.mu.Lock()
 	defer f.mu.Unlock()
-	return f.snapshot()
+	return f.snapshot(true)
 }
 func track(start time.Time, message string, stats StatsClient, logger *log.Logger) {
 	elapsed := time.Since(start)
@@ -1389,7 +1397,7 @@ func track(start time.Time, message string, stats StatsClient, logger *log.Logge
 	stats.Histogram("snapshot", elapsed.Seconds(), 1.0)
 }
 
-func (f *Fragment) snapshot() error {
+func (f *Fragment) snapshot(reopen bool) error {
 	logger := f.logger()
 	logger.Printf("fragment: snapshotting %s/%s/%s/%d", f.index, f.frame, f.view, f.slice)
 	completeMessage := fmt.Sprintf("fragment: snapshot complete %s/%s/%s/%d", f.index, f.frame, f.view, f.slice)
@@ -1424,9 +1432,11 @@ func (f *Fragment) snapshot() error {
 		return fmt.Errorf("rename snapshot: %s", err)
 	}
 
-	// Reopen storage.
-	if err := f.openStorage(); err != nil {
-		return fmt.Errorf("open storage: %s", err)
+	if reopen {
+		// Reopen storage.
+		if err := f.openStorage(); err != nil {
+			return fmt.Errorf("open storage: %s", err)
+		}
 	}
 
 	// Reset operation count.
