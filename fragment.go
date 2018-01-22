@@ -424,12 +424,13 @@ func (f *Fragment) setBit(rowID, columnID uint64) (changed bool, err error) {
 		return false, err
 	}
 
-	// Get the row from row cache or fragment.storage.
-	bm := f.row(rowID, true, true)
-	bm.SetBit(columnID)
-
-	// Update the cache.
-	f.cache.Add(rowID, bm.Count())
+	// Update row if it's already in row cache.
+	bm, ok := f.rowCache.Fetch(rowID)
+	if ok && bm != nil {
+		bm.SetBit(columnID)
+		// Update the cache.
+		f.cache.Add(rowID, bm.Count())
+	}
 
 	f.stats.Count("setBit", 1, 0.001)
 
@@ -476,12 +477,13 @@ func (f *Fragment) clearBit(rowID, columnID uint64) (changed bool, err error) {
 		return false, err
 	}
 
-	// Get the row from cache or fragment.storage.
-	bm := f.row(rowID, true, true)
-	bm.ClearBit(columnID)
-
-	// Update the cache.
-	f.cache.Add(rowID, bm.Count())
+	// Update row if it's already in row cache.
+	bm, ok := f.rowCache.Fetch(rowID)
+	if ok && bm != nil {
+		bm.ClearBit(columnID)
+		// Update the cache.
+		f.cache.Add(rowID, bm.Count())
+	}
 
 	f.stats.Count("clearBit", 1, 1.0)
 
